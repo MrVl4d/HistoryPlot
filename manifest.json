@@ -1,0 +1,14 @@
+{
+    "domain": "history_plot",
+    "name": "History plot",
+    "codeowners": ["@MrVl4d"],
+    "dependencies": [],
+    "documentation": "https://github.com/MrVl4d/HistoryPlot",
+    "config_flow": true,
+    "iot_class": "local_polling",
+    "requirements": ["matplotlib", "mplcyberpunk"],
+    "version": "0.1.0",
+    "loggers": ["custom_components.history_plot"],
+    "single_config_entry": true
+  }
+  

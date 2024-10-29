@@ -1,0 +1,21 @@
+create_plot:
+  name: Create plot
+  description: Create plot for object that expose history
+  target:
+    entity:
+      domain: sensor
+  fields:
+    path_to_image:
+      description: "Specify path where to save image."
+      required: true
+      selector:
+        text:
+    date_from:
+      description: "Specify start date and time for the plot."
+      required: true
+      selector:
+        datetime:
+    date_to:
+      description: "Specify end date and time for the plot."
+      selector:
+        datetime:
