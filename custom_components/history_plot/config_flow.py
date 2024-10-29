@@ -6,7 +6,8 @@ from typing import Any
 
 from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 
-from .const import DEFAULT_NAME, DOMAIN
+DOMAIN = "history_plot"
+DEFAULT_NAME = "History plot"
 
 
 class HistoryPlotConfigFlow(ConfigFlow, domain=DOMAIN):
