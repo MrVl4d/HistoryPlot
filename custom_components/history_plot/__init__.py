@@ -20,7 +20,7 @@ DOMAIN = "history_plot"
 _LOGGER = logging.getLogger(__name__)
 
 
-async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
+async def async_setup_entry(hass: HomeAssistant, config: ConfigType) -> bool:
     def is_float(element: any) -> bool:
         if element is None: 
             return False
