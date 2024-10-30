@@ -20,7 +20,7 @@ DOMAIN = "history_plot"
 _LOGGER = logging.getLogger(__name__)
 
 
-def setup(hass: HomeAssistant, config: ConfigType) -> bool:
+async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
     def is_float(element: any) -> bool:
         if element is None: 
             return False
@@ -93,7 +93,7 @@ def setup(hass: HomeAssistant, config: ConfigType) -> bool:
         plt.savefig(path_to_image, format=os.path.splitext(path_to_image)[1][1:])
 
     # Register our service with Home Assistant.
-    hass.services.register(DOMAIN, 'create_plot', create_plot)
+    hass.services.async_register(DOMAIN, 'create_plot', create_plot)
 
     # Return boolean to indicate that initialization was successfully.
     return True
