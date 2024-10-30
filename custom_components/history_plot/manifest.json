@@ -8,7 +8,7 @@
     "config_flow": true,
     "iot_class": "local_polling",
     "requirements": ["matplotlib", "mplcyberpunk"],
-    "version": "v1.0.1",
+    "version": "v1.0.2",
     "loggers": ["custom_components.history_plot"],
     "single_config_entry": true
   }
